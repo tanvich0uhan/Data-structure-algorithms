@@ -1,3 +1,7 @@
+//This code is for 3d array & it takes values from user that how many rows, columns, 2d arrays & values for filling a 3d array
+//& it displays out no. of elements, address of every element, & it displays out the how the row major order sequence & column major order seqeunce follows up in an array. 
+//After the code, there's an output displayed too!
+
 #include<iostream.h>
 #include<conio.h>
 void main()
