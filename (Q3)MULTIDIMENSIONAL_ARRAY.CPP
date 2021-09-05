@@ -72,11 +72,9 @@ Fill the value for question mark, [?][][]
 1
 
 Fill the value for question mark, [][?][]
-
 2
 
 Fill the value for question mark, [][][?]
-
 3
 
 Total number of elements = 6
@@ -84,89 +82,53 @@ Total number of elements = 6
 Now, enter the values in 3d array for row major order 
 
 1
-
 2
-
 3
-
 4
-
 5
-
 6
-
-
 
 
 
 PRINTING THE ARRAY & ADDRESS OF EVERY ELEMENT
 
 [0][0][0] = 1
-
 Address of [0][0][0] = 0x7ffc15f08900
-
 [0][0][1] = 2
-
 Address of [0][0][1] = 0x7ffc15f08904
-
 [0][0][2] = 3
-
 Address of [0][0][2] = 0x7ffc15f08908
-
 [0][1][0] = 4
-
 Address of [0][1][0] = 0x7ffc15f08928
-
 [0][1][1] = 5
-
 Address of [0][1][1] = 0x7ffc15f0892c
-
 [0][1][2] = 6
-
 Address of [0][1][2] = 0x7ffc15f08930
+
 
 Now, enter the same values in 3d array for column major order  
 
 1
-
 2
-
 3
-
 4
-
 5
-
 6
-
-
 
 
 
 PRINTING THE ARRAY & ADDRESS OF EVERY ELEMENT
 
 [0][0][0] = 1
-
 Address of [0][0][0] = 0x7ffc15f08900
-
 [0][1][0] = 2
-
 Address of [0][1][0] = 0x7ffc15f08928
-
 [0][2][0] = 3
-
 Address of [0][2][0] = 0x7ffc15f08950
-
 [0][0][1] = 4
-
 Address of [0][0][1] = 0x7ffc15f08904
-
 [0][1][1] = 5
-
 Address of [0][1][1] = 0x7ffc15f0892c
-
 [0][2][1] = 6
-
 Address of [0][2][1] = 0x7ffc15f08954
-
 */
