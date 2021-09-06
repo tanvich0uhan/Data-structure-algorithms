@@ -1,3 +1,5 @@
+//Adding two 3d arrays as per by the user defined rows, columns, & no. of 2d arrays.
+
 #include<iostream.h>
 #include<conio.h>
 void main()
