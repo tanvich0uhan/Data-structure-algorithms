@@ -1,3 +1,5 @@
+//Multiplication of two 2D arrays 
+
 #include<iostream.h>
 #include<conio.h>
 
