@@ -1,18 +1,19 @@
+//This code takes the info for no. of books entered by user 
 #include<iostream.h>
 #include<conio.h>
 #include<string.h>
 //For college books
 struct book{
 int pyear; //Year of publishing
-char author[100];
-char name[100];
-char subject[100];
-char y_n;
-int pages,vpages[50];
-int Volumes;
-void entry();
-void display();
-}k;
+char author[100];// Name of Author
+char name[100]; //Nme of book
+char subject[100]; //Name of subject
+char y_n;// variable for taking user input that a book has volumes or not ?
+int pages,vpages[50];// pages is for only no. of pages in book & vpages is for no. of pages in volume of book 
+int Volumes;// No. of volumes in book
+void entry(); //member function which is used to take entries from user
+void display(); //member function which is used to display the data that user entered.
+}k; //for accessing the structure elements 
 
 void entry(book k[],int n)
 {
