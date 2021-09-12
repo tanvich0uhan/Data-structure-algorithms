@@ -40,17 +40,15 @@ if(k[i].y_n=='y')
  cout<<"Enter the pages in Volume "<<j+1<<endl;
  cin>>k[i].vpages[j];
 			 }
- }
+}
 else{
 cout<<"Enter the pages in Book "<<endl;
 cin>>k[i].pages;
 }
  }}
 void display(book k[],int n){
-
 cout<<"Enter the number of books "<<endl;
 cin>>n;
-
 cout<<endl;
 cout<<"\t";
 cout<<"Displaying The entered books details "<<endl;
@@ -68,8 +66,8 @@ if(k[i].y_n=='y')
  }  }
  else{
  cout<<"Pages in book = "<<k[i].pages<<endl;}
-
-}       }
+}
+}
 void main()
 {
 clrscr();
