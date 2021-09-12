@@ -1,10 +1,12 @@
 //This code takes the info for no. of books entered by user 
+//Compiled & run in turbo c++
+
 #include<iostream.h>
 #include<conio.h>
 #include<string.h>
 //For college books
 struct book{
-int pyear; //Year of publishing
+int p_year; //Year of publishing
 char author[100];// Name of Author
 char name[100]; //Nme of book
 char subject[100]; //Name of subject
@@ -17,7 +19,6 @@ void display(); //member function which is used to display the data that user en
 
 void entry(book k[],int n)
 {
-
 int i;
 for(i=0;i<n;i++){
 cout<<"Filling the entries of book no. "<<i+1<<endl;
@@ -29,7 +30,7 @@ cin.getline(k[i].name,100);
 cout<<"Enter the Author's name "<<endl;
 cin.getline(k[i].author,100);
 cout<<"Enter the year of publishing "<<endl;
-cin>>k[i].pyear;
+cin>>k[i].p_year;
 cout<<"Does this book have volumes ?, press 'y' for yes & press 'n' for no "<<endl;
 cin>>k[i].y_n;
 if(k[i].y_n=='y')
@@ -46,6 +47,7 @@ cout<<"Enter the pages in Book "<<endl;
 cin>>k[i].pages;
 }
  }}
+
 void display(book k[],int n){
 cout<<"Enter the number of books "<<endl;
 cin>>n;
@@ -57,7 +59,7 @@ cout<<"\t Entered details of book no. "<<i+1<<endl;
 cout<<"This Book is for "<<k[i].subject<<endl;
 cout<<"Author of this book is "<<k[i].author<<endl;
 cout<<"Name of the book is "<<k[i].name<<endl;
-cout<<"In "<<k[i].pyear<<" , This book is get published "<<endl;
+cout<<"In "<<k[i].p_year<<" , This book is get published "<<endl;
 if(k[i].y_n=='y')
 {
  cout<<"No. of Volumes = "<<k[i].Volumes<<endl;
@@ -68,6 +70,7 @@ if(k[i].y_n=='y')
  cout<<"Pages in book = "<<k[i].pages<<endl;}
 }
 }
+
 void main()
 {
 clrscr();
