@@ -1,3 +1,6 @@
+//Insertion of a new node at the end of linked list
+//Compiled in turbo c++
+
 #include <iostream.h>
 #include <conio.h>
 #include <malloc.h>
@@ -43,6 +46,7 @@ clrscr();
   FIRST = one;
   print(FIRST);
   cout<<endl;
+  
   cout<<"Displaying the linked list after insertion at the end "<<endl;
   struct node *newnode;
   newnode =(node*) malloc(sizeof(struct node));
@@ -54,8 +58,6 @@ clrscr();
   }
   temp->link=newnode;
   print(FIRST);
-
-
 
 getch();
 }
