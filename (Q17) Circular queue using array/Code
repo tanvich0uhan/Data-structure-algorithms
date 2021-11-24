@@ -1,0 +1,90 @@
+//Program of circular queue using Array with basic functions(insertion, deletion & displaying the elements)
+//Compiled through online compiler 
+
+#include <iostream>  
+using namespace std;
+# define max 10 
+int queue[max];  // Declaring array here  
+int front=-1;  
+int rear=-1;  
+
+void enqueue(int value)      // Inserting an element     
+{  
+    if(front==-1 && rear==-1)   // condition to check an empty queue 
+    {  
+        front=0;  
+        rear=0;  
+        queue[rear]=value;  
+    }  
+    else if((rear+1)%max==front)  // condition to check queue is full  
+    {  
+        cout<<"Queue is overflow! \n";  
+    }  
+    else  
+    {  
+        rear=(rear+1)%max;       // rear is incremented  
+        queue[rear]=value;     // assigning a value to the queue at the rear position.  
+    }  
+}  
+  
+int dequeue()     // function to delete the element from the queue    
+{  
+    if((front==-1) && (rear==-1))  // condition to check queue is empty  
+    {  
+        cout<<"\nQueue is underflow! \n";  
+    }  
+ else if(front==rear)  
+{  
+   cout<<"\nThe dequeued element =  "<< queue[front]<<endl;  
+   front=-1;  
+   rear=-1;  
+}   
+else  
+{  
+    cout<<"The dequeued element = "<< queue[front]<<endl;  
+   front=(front+1)%max;  
+}  
+}  
+  
+void display()   // function to display the elements of a queue  
+{  
+    int i=front;  
+    if(front==-1 && rear==-1)  
+    {  
+        cout<<" Queue is empty! "<<endl;  
+    }  
+    else  
+    {  
+        cout<<"Values in a circular queue are :- \n";  
+        while(i<=rear)  
+        {  
+            cout<<queue[i];  
+            i=(i+1)%max; 
+            cout<<endl;
+        }  
+    }  
+}  
+int main()  
+{  
+    int choice=1,x;   // variables declaration  
+      
+    while(choice<4 && choice!=0)   // while loop  
+    {  
+    cout<<"\n Program for circular queue using Array \n\t by TANVI \n\tPress 1: For inserting an element\n\tPress 2: For Deletion of an element\n\tPress 3: For Displaying the elements in queue\n\tPress any other number(except 1,2 & 3) or alphabet to exit\n\t\tEnter your choice  ";  
+    cin>>choice;  
+      
+    switch(choice)  
+    {  
+        case 1:      
+        cout<<"Enter the value for insertion\n";  
+        cin>>x;  
+        enqueue(x);  
+        break;  
+        case 2:  
+        dequeue();  
+        break;  
+        case 3:  
+        display();  
+    }}  
+    return 0;  
+}  
